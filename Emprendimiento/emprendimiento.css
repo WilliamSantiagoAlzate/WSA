@@ -1,0 +1,146 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*Inicio*/
+header .menu{
+  background: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header .menu .contenedor{
+  display: flex;
+  max-width: 1280px;
+  width: 90%;
+  height: 62px;
+  margin: auto;
+}
+
+header .menu .contenedor a{
+  height: 100%;
+  width: 97.41px;
+  margin: auto;
+}
+
+header .menu .contenedor a img{
+  height: 30px;
+  margin-top: 16px;
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+header .menu .contenedor a img:hover{
+  transform: scale(1.25);
+  transition: 0.4s;
+}
+
+/*Contenido*/
+main{
+  margin-top: 62px;
+}
+
+main #emprendamos-jutos{
+  padding: 0;
+}
+
+main #emprendamos-jutos .contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+main #emprendamos-jutos .contenedor  h1{
+  text-align: center;
+  font-size: 55px;
+  padding: 20px 0;
+  margin:0;
+
+}
+
+main #emprendamos-jutos .contenedor .contenido{
+  margin-bottom: 30px;
+}
+
+main #emprendamos-jutos .contenedor .contenido p{
+  font-size: 20px;
+  text-align: justify;
+}
+
+main #emprendamos-jutos .contenedor .contenido form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 77%;
+  margin: auto;
+}
+
+main #emprendamos-jutos .contenedor .contenido form input[type="text"],main #emprendamos-jutos .contenedor .contenido form input[type="email"]{
+  width: 49%;
+  margin-bottom: 15px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5CB8FF;
+  font-size: 17px;
+}
+
+main #emprendamos-jutos .contenedor .contenido form input[name="proyecto"]{
+  width: 100%;
+}
+
+main #emprendamos-jutos .contenedor .contenido form textarea{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5CB8FF;
+  font-size: 18px;
+  font-family: 'PT Sans';
+}
+
+main #emprendamos-jutos .contenedor .contenido form input[type="submit"]{
+  font-size: 15px;
+  color: #FFF;
+  background: #5CB8FF;
+  padding: 14px 24px;
+  margin: auto;
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+/*Responsive desing*/
+@media (max-width:800px) {
+
+  header{
+    background-position: center;
+  }
+
+  header .menu .contenedor{
+    height: auto;
+  }
+
+  header .menu .contenedor a img{
+    margin-top: 5.5px;
+    height: 30px;
+  }
+
+  main #emprendamos-jutos .contenedor .contenido form{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  main #emprendamos-jutos .contenedor .contenido form input[type="text"],main #emprendamos-jutos .contenedor .contenido form input[type="email"]{
+    width: 100%;
+  }
+}

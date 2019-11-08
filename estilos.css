@@ -1,0 +1,441 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.icono-menu{
+  display: none;
+}
+
+/*Inicio*/
+header{
+  background: linear-gradient(rgba(167, 219, 236, 0.9),rgba(167, 219, 236, 0.9)), url(Imagenes/fondo.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+header .menu{
+  background: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header .menu .contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+  height: 60px;
+}
+
+header .menu .contenedor a{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+
+header .menu .contenedor a img{
+  transform: scale(1);
+  transition: 0.4s;
+  height: 60%;
+}
+
+header .menu .contenedor a img:hover{
+  transform: scale(1.25);
+  transition: 0.4s;
+}
+
+header .menu .contenedor nav{
+  width: 80%;
+  height: 100%;
+}
+
+header .menu .contenedor nav .lista-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header .menu .contenedor nav .lista-menu li{
+  list-style: none;
+  background: transparent;
+  height: 100%;
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+header .menu .contenedor nav .lista-menu li:hover{
+  transform: scale(1.15);
+  transition: 0.4s;
+}
+
+header .menu .contenedor nav .lista-menu li a{
+  color: #C3C9CA;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100%;
+  width: auto;
+}
+
+header .titulo .contenedor{
+  display: flex;
+  justify-content: center;
+}
+
+header .titulo .contenedor .contenedor-titulo{
+  text-align: center;
+  padding: 40vh 0;
+}
+
+header .titulo .contenedor .contenedor-titulo h1{
+  font-size: 60px;
+  color: #000000;
+  margin: 0;
+}
+
+header .titulo .contenedor .contenedor-titulo h2{
+  font-size: 20px;
+  color: #000000;
+}
+
+/*Seccion sobre mi*/
+main #sobre-mi{
+  padding: 20px 0;
+}
+
+main #sobre-mi .contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+main #sobre-mi .contenedor  h3{
+  text-align: center;
+  font-size: 55px;
+}
+
+main #sobre-mi .contenedor .contenedor-sobremi{
+  display: flex;
+  justify-content: space-around;
+}
+
+main #sobre-mi .contenedor .contenedor-sobremi .imagen{
+  width: 45%;
+}
+
+main #sobre-mi .contenedor .contenedor-sobremi .imagen img{
+  width: 100%;
+}
+
+main #sobre-mi .contenedor .contenedor-sobremi .texto{
+  width: 45%;
+  text-align: justify;
+}
+
+/*Seccion mi historia*/
+main #mi-historia{
+  background: linear-gradient(rgba(84, 93, 220, 0.94),rgba(96,171,245,0.9));
+  padding: 70px 0;
+  margin-top: 55px;
+  text-align: center;
+}
+
+main #mi-historia .contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+main #mi-historia .contenedor a{
+  font-size: 35px;
+  color: #FFF;
+  background: #5CB8FF;
+  padding: 14px 24px;
+  border-radius: 5px;
+}
+
+/*Seccion mis empresas*/
+main #mis-empresas{
+  padding: 20px 0;
+}
+
+main #mis-empresas .contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+main #mis-empresas .contenedor  h3{
+  text-align: center;
+  font-size: 55px;
+}
+
+main #mis-empresas .contenedor .contenedor-misempresas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #FFF;
+}
+
+main #mis-empresas .contenedor .contenedor-misempresas .empresa{
+  width: 24%;
+  padding: 34px 30px 38px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  background: linear-gradient(to top, #40A8F9,#5CB8FF);
+  box-shadow: 0 12px 30px 0 rgba(86, 163, 222, 0.3);
+}
+
+main #mis-empresas .contenedor .contenedor-misempresas .empresa h4{
+  font-size: 30px;
+  margin: 0;
+}
+
+main #mis-empresas .contenedor .contenedor-misempresas .empresa p{
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+main #mis-empresas .contenedor .contenedor-misempresas .empresa img{
+  float: right;
+}
+
+/*Seccion mis noticias*/
+main #mis-noticias{
+  padding: 20px 0;
+}
+
+main #mis-noticias .contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+main #mis-noticias .contenedor  h3{
+  text-align: center;
+  font-size: 55px;
+}
+
+main #mis-noticias .contenedor .owl-theme button.owl-prev{
+  font-size: 40px;
+}
+
+main #mis-noticias .contenedor .owl-theme button.owl-next{
+  font-size: 40px;
+}
+
+main #mis-noticias .contenedor .owl-theme span{
+  color: #000000;
+}
+
+/*Seccion emprendamos juntos*/
+main #emprendamos-juntos{
+  background: linear-gradient(rgba(84, 93, 220, 0.94),rgba(96,171,245,0.9));
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  margin-top: 55px;
+}
+
+main #emprendamos-juntos .contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+main #emprendamos-juntos .contenedor h3{
+  font-size: 30px;
+  color: #FFF;
+}
+
+main #emprendamos-juntos .contenedor a{
+  font-size: 15px;
+  color: #FFF;
+  background: #5CB8FF;
+  padding: 14px 24px;
+  border-radius: 5px;
+}
+
+/*Seccion contacto*/
+main #contacto .contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+main #contacto .contenedor h3{
+  text-align: center;
+  font-size: 55px;
+}
+
+main #contacto .contenedor form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 77%;
+  margin: auto;
+}
+
+main #contacto .contenedor form input[type="text"],main #contacto .contenedor form input[type="email"]{
+  width: 49%;
+  margin-bottom: 15px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5CB8FF;
+  font-size: 17px;
+}
+
+main #contacto .contenedor form textarea{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5CB8FF;
+  font-size: 18px;
+  font-family: 'PT Sans';
+}
+
+main #contacto .contenedor form input[type="submit"]{
+  font-size: 15px;
+  color: #FFF;
+  background: #5CB8FF;
+  padding: 14px 24px;
+  margin: auto;
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+/*Redes sociales y derechos*/
+footer{
+  background: #2F2F2F;
+  padding: 40px 0;
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer .contenedor{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .contenedor img{
+  margin: 0 40px;
+  transform: scale(1);
+  transition: 0.4s;
+  vertical-align: middle;
+}
+
+footer .contenedor img:hover{
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+footer .contenedor p{
+  color: #FFF;
+  margin-top: 40px;
+}
+
+/*Responsive desing*/
+@media (max-width:800px) {
+  .icono-menu{
+    display: block;
+    float: right;
+    height: 60%;
+  }
+
+  header{
+    background-position: center;
+  }
+
+  header .menu .contenedor a img:hover{
+    transform: scale(1);
+  }
+
+  header .menu .contenedor nav{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 268px;
+    background: #000;
+    width: 100%;
+    display: none;
+  }
+
+  header .menu .contenedor nav .lista-menu{
+    flex-direction: column;
+  }
+
+  header .menu .contenedor nav .lista-menu li{
+    margin-bottom: 10px;
+  }
+
+  header .titulo .contenedor .contenedor-titulo{
+    padding: 30vh 0;
+  }
+
+  main #sobre-mi .contenedor .contenedor-sobremi{
+    flex-direction: column;
+  }
+
+  main #sobre-mi .contenedor .contenedor-sobremi .imagen img{
+    width: 222%;
+  }
+
+  main #sobre-mi .contenedor .contenedor-sobremi .texto{
+    width: 100%;
+  }
+
+  main #mis-empresas .contenedor .contenedor-misempresas{
+    flex-direction: column;
+  }
+
+  main #mis-empresas .contenedor .contenedor-misempresas .empresa{
+    width: 82%;
+  }
+
+  main #contacto .contenedor form{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  main #contacto .contenedor form input[type="text"],main #contacto .contenedor form input[type="email"]{
+    width: 100%;
+  }
+
+  footer .contenedor img{
+    margin: 0 10px;
+  }
+}
+
+@media (min-width:600px) and (max-width:800px) {
+  header .titulo .contenedor .contenedor-titulo{
+    padding: 40vh 0;
+  }
+
+  main #mis-empresas .contenedor .contenedor-misempresas .empresa{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
