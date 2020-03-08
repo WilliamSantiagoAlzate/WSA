@@ -33,7 +33,7 @@ h3 {
 
 /*Inicio*/
 header{
-  background: linear-gradient(rgba(167, 219, 236, 0.9),rgba(167, 219, 236, 0.9)), url(../Imagenes/fondo.jpg);
+  background: linear-gradient(rgba(167, 219, 236, 0.9),rgba(167, 219, 236, 0.9)), url(Imagenes/fondo.jpg);
   height: 100vh;
   background-size: cover;
 }
