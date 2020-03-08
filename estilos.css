@@ -15,9 +15,25 @@ a{
   display: none;
 }
 
+h1 {
+  font-size: 60px;
+  color: #000;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  color: #000;
+}
+
+h3 {
+  text-align: center;
+  font-size: 55px;
+}
+
 /*Inicio*/
 header{
-  background: linear-gradient(rgba(167, 219, 236, 0.9),rgba(167, 219, 236, 0.9)), url(Imagenes/fondo.jpg);
+  background: linear-gradient(rgba(167, 219, 236, 0.9),rgba(167, 219, 236, 0.9)), url(../Imagenes/fondo.jpg);
   height: 100vh;
   background-size: cover;
 }
@@ -59,7 +75,7 @@ header .menu .contenedor a img:hover{
 }
 
 header .menu .contenedor nav{
-  width: 80%;
+  width: 40%;
   height: 100%;
 }
 
@@ -103,17 +119,6 @@ header .titulo .contenedor .contenedor-titulo{
   padding: 40vh 0;
 }
 
-header .titulo .contenedor .contenedor-titulo h1{
-  font-size: 60px;
-  color: #000000;
-  margin: 0;
-}
-
-header .titulo .contenedor .contenedor-titulo h2{
-  font-size: 20px;
-  color: #000000;
-}
-
 /*Seccion sobre mi*/
 main #sobre-mi{
   padding: 20px 0;
@@ -123,11 +128,6 @@ main #sobre-mi .contenedor{
   max-width: 1280px;
   width: 90%;
   margin: auto;
-}
-
-main #sobre-mi .contenedor  h3{
-  text-align: center;
-  font-size: 55px;
 }
 
 main #sobre-mi .contenedor .contenedor-sobremi{
@@ -148,52 +148,26 @@ main #sobre-mi .contenedor .contenedor-sobremi .texto{
   text-align: justify;
 }
 
-/*Seccion mi historia*/
-main #mi-historia{
-  background: linear-gradient(rgba(84, 93, 220, 0.94),rgba(96,171,245,0.9));
-  padding: 70px 0;
-  margin-top: 55px;
-  text-align: center;
-}
-
-main #mi-historia .contenedor{
-  max-width: 1280px;
-  width: 90%;
-  margin: auto;
-}
-
-main #mi-historia .contenedor a{
-  font-size: 35px;
-  color: #FFF;
-  background: #5CB8FF;
-  padding: 14px 24px;
-  border-radius: 5px;
-}
-
-/*Seccion mis empresas*/
-main #mis-empresas{
+/*Seccion mis proyectos*/
+main #mis-proyectos{
+  background: linear-gradient(rgba(167, 219, 236, 0.9),rgba(167, 219, 236, 0.9));
   padding: 20px 0;
 }
 
-main #mis-empresas .contenedor{
+main #mis-proyectos .contenedor{
   max-width: 1280px;
   width: 90%;
   margin: auto;
 }
 
-main #mis-empresas .contenedor  h3{
-  text-align: center;
-  font-size: 55px;
-}
-
-main #mis-empresas .contenedor .contenedor-misempresas{
+main #mis-proyectos .contenedor .contenedor-misproyectos{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   color: #FFF;
 }
 
-main #mis-empresas .contenedor .contenedor-misempresas .empresa{
+main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto{
   width: 24%;
   padding: 34px 30px 38px 30px;
   border-radius: 10px;
@@ -203,131 +177,29 @@ main #mis-empresas .contenedor .contenedor-misempresas .empresa{
   box-shadow: 0 12px 30px 0 rgba(86, 163, 222, 0.3);
 }
 
-main #mis-empresas .contenedor .contenedor-misempresas .empresa h4{
+main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto h4{
   font-size: 30px;
   margin: 0;
 }
 
-main #mis-empresas .contenedor .contenedor-misempresas .empresa p{
+main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto p{
   margin-bottom: 20px;
   height: 40px;
 }
 
-main #mis-empresas .contenedor .contenedor-misempresas .empresa img{
+main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto img{
   float: right;
 }
 
-/*Seccion mis noticias*/
-main #mis-noticias{
-  padding: 20px 0;
-}
-
-main #mis-noticias .contenedor{
-  max-width: 1280px;
-  width: 90%;
-  margin: auto;
-}
-
-main #mis-noticias .contenedor  h3{
-  text-align: center;
-  font-size: 55px;
-}
-
-main #mis-noticias .contenedor .owl-theme button.owl-prev{
-  font-size: 40px;
-}
-
-main #mis-noticias .contenedor .owl-theme button.owl-next{
-  font-size: 40px;
-}
-
-main #mis-noticias .contenedor .owl-theme span{
-  color: #000000;
-}
-
-/*Seccion emprendamos juntos*/
-main #emprendamos-juntos{
-  background: linear-gradient(rgba(84, 93, 220, 0.94),rgba(96,171,245,0.9));
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 70px;
-  margin-top: 55px;
-}
-
-main #emprendamos-juntos .contenedor{
-  max-width: 1280px;
-  width: 90%;
-  margin: auto;
-}
-
-main #emprendamos-juntos .contenedor h3{
-  font-size: 30px;
-  color: #FFF;
-}
-
-main #emprendamos-juntos .contenedor a{
-  font-size: 15px;
-  color: #FFF;
-  background: #5CB8FF;
-  padding: 14px 24px;
-  border-radius: 5px;
-}
-
-/*Seccion contacto*/
-main #contacto .contenedor{
-  max-width: 1280px;
-  width: 90%;
-  margin: auto;
-}
-
-main #contacto .contenedor h3{
-  text-align: center;
-  font-size: 55px;
-}
-
-main #contacto .contenedor form{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 77%;
-  margin: auto;
-}
-
-main #contacto .contenedor form input[type="text"],main #contacto .contenedor form input[type="email"]{
-  width: 49%;
-  margin-bottom: 15px;
-  padding: 18px 0;
-  border: 0;
-  border-bottom: 1px solid #5CB8FF;
-  font-size: 17px;
-}
-
-main #contacto .contenedor form textarea{
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 18px 0;
-  border: 0;
-  border-bottom: 1px solid #5CB8FF;
-  font-size: 18px;
-  font-family: 'PT Sans';
-}
-
-main #contacto .contenedor form input[type="submit"]{
-  font-size: 15px;
-  color: #FFF;
-  background: #5CB8FF;
-  padding: 14px 24px;
-  margin: auto;
-  border-style: hidden;
-  border-radius: 5px;
-}
-
-/*Redes sociales y derechos*/
+/*Redes sociales*/
 footer{
   background: #2F2F2F;
-  padding: 40px 0;
-  margin-top: 40px;
+  padding-bottom: 55px;
   text-align: center;
+}
+
+footer h3 {
+  color: #C3C9CA;
 }
 
 footer .contenedor{
@@ -349,11 +221,6 @@ footer .contenedor img{
 footer .contenedor img:hover{
   transform: scale(1.2);
   transition: 0.4s;
-}
-
-footer .contenedor p{
-  color: #FFF;
-  margin-top: 40px;
 }
 
 /*Responsive desing*/
