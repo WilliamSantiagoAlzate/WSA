@@ -67,6 +67,7 @@ header .menu .contenedor a img{
   transform: scale(1);
   transition: 0.4s;
   height: 60%;
+  content: url(Imagenes/logo-negro.png);
 }
 
 header .menu .contenedor a img:hover{
