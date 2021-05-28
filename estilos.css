@@ -1,17 +1,17 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.icono-menu{
+.icono-menu {
   display: none;
 }
 
@@ -32,13 +32,17 @@ h3 {
 }
 
 /*Inicio*/
-header{
-  background: linear-gradient(rgba(167, 219, 236, 0.9),rgba(167, 219, 236, 0.9)), url(Imagenes/fondo.jpg);
+header {
+  background: linear-gradient(
+      rgba(167, 219, 236, 0.9),
+      rgba(167, 219, 236, 0.9)
+    ),
+    url(Imagenes/fondo.jpg);
   height: 100vh;
   background-size: cover;
 }
 
-header .menu{
+header .menu {
   background: #000;
   position: fixed;
   width: 100%;
@@ -46,7 +50,7 @@ header .menu{
   z-index: 100;
 }
 
-header .menu .contenedor{
+header .menu .contenedor {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,30 +60,30 @@ header .menu .contenedor{
   height: 60px;
 }
 
-header .menu .contenedor a{
+header .menu .contenedor a {
   display: flex;
   align-items: center;
   width: 20%;
   height: 100%;
 }
 
-header .menu .contenedor a img{
+header .menu .contenedor a img {
   transform: scale(1);
   transition: 0.4s;
   height: 60%;
 }
 
-header .menu .contenedor a img:hover{
+header .menu .contenedor a img:hover {
   transform: scale(1.25);
   transition: 0.4s;
 }
 
-header .menu .contenedor nav{
+header .menu .contenedor nav {
   width: 40%;
   height: 100%;
 }
 
-header .menu .contenedor nav .lista-menu{
+header .menu .contenedor nav .lista-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,7 +92,7 @@ header .menu .contenedor nav .lista-menu{
   padding: 0;
 }
 
-header .menu .contenedor nav .lista-menu li{
+header .menu .contenedor nav .lista-menu li {
   list-style: none;
   background: transparent;
   height: 100%;
@@ -96,122 +100,142 @@ header .menu .contenedor nav .lista-menu li{
   transition: 0.4s;
 }
 
-header .menu .contenedor nav .lista-menu li:hover{
+header .menu .contenedor nav .lista-menu li:hover {
   transform: scale(1.15);
   transition: 0.4s;
 }
 
-header .menu .contenedor nav .lista-menu li a{
-  color: #C3C9CA;
+header .menu .contenedor nav .lista-menu li a {
+  color: #c3c9ca;
   font-size: 20px;
   font-weight: bold;
   height: 100%;
   width: auto;
 }
 
-header .titulo .contenedor{
+header .titulo .contenedor {
   display: flex;
   justify-content: center;
 }
 
-header .titulo .contenedor .contenedor-titulo{
+header .titulo .contenedor .contenedor-titulo {
   text-align: center;
   padding: 40vh 0;
 }
 
 /*Seccion sobre mi*/
-main #sobre-mi{
+main #sobre-mi {
   padding: 20px 0;
 }
 
-main #sobre-mi .contenedor{
+main #sobre-mi .contenedor {
   max-width: 1280px;
   width: 90%;
   margin: auto;
 }
 
-main #sobre-mi .contenedor .contenedor-sobremi{
+main #sobre-mi .contenedor .contenedor-sobremi {
   display: flex;
   justify-content: space-around;
 }
 
-main #sobre-mi .contenedor .contenedor-sobremi .imagen{
+main #sobre-mi .contenedor .contenedor-sobremi .imagen {
   width: 45%;
 }
 
-main #sobre-mi .contenedor .contenedor-sobremi .imagen img{
+main #sobre-mi .contenedor .contenedor-sobremi .imagen img {
   width: 100%;
 }
 
-main #sobre-mi .contenedor .contenedor-sobremi .texto{
+main #sobre-mi .contenedor .contenedor-sobremi .texto {
   width: 45%;
   text-align: justify;
+  font-size: 20px;
+}
+
+.icons__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.icons__list li {
+  list-style: none;
+  padding: 10px;
+}
+
+.icons__list li img {
+  height: 60px;
 }
 
 /*Seccion mis proyectos*/
-main #mis-proyectos{
-  background: linear-gradient(rgba(167, 219, 236, 0.9),rgba(167, 219, 236, 0.9));
+main #mis-proyectos {
+  background: linear-gradient(
+    rgba(167, 219, 236, 0.9),
+    rgba(167, 219, 236, 0.9)
+  );
   padding: 20px 0;
 }
 
-main #mis-proyectos .contenedor{
+main #mis-proyectos .contenedor {
   max-width: 1280px;
   width: 90%;
   margin: auto;
 }
 
-main #mis-proyectos .contenedor .contenedor-misproyectos{
+main #mis-proyectos .contenedor .contenedor-misproyectos {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  color: #FFF;
+  color: #fff;
 }
 
-main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto{
+main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto {
   width: 24%;
   padding: 34px 30px 38px 30px;
   border-radius: 10px;
   margin-bottom: 40px;
   position: relative;
-  background: linear-gradient(to top, #40A8F9,#5CB8FF);
+  background: linear-gradient(to top, #40a8f9, #5cb8ff);
   box-shadow: 0 12px 30px 0 rgba(86, 163, 222, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto h4{
+main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto h4 {
   font-size: 30px;
-  margin: 0;
+  margin: 20px;
   text-align: center;
 }
 
-main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto p{
+main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto p {
   margin-bottom: 20px;
   text-align: justify;
 }
 
-main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto a{
+main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto a {
   padding: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 5px;
-  color: #5CB8FF;
+  color: #5cb8ff;
   width: auto;
   margin-top: auto;
 }
 
 /*Redes sociales*/
-footer{
-  background: #2F2F2F;
+footer {
+  background: #2f2f2f;
   padding-bottom: 55px;
   text-align: center;
 }
 
 footer h3 {
-  color: #C3C9CA;
+  color: #c3c9ca;
 }
 
-footer .contenedor{
+footer .contenedor {
   max-width: 1280px;
   width: 90%;
   margin: auto;
@@ -220,35 +244,35 @@ footer .contenedor{
   flex-direction: column;
 }
 
-footer .contenedor img{
+footer .contenedor img {
   margin: 0 40px;
   transform: scale(1);
   transition: 0.4s;
   vertical-align: middle;
 }
 
-footer .contenedor img:hover{
+footer .contenedor img:hover {
   transform: scale(1.2);
   transition: 0.4s;
 }
 
 /*Responsive desing*/
-@media (max-width:800px) {
-  .icono-menu{
+@media (max-width: 800px) {
+  .icono-menu {
     display: block;
     float: right;
     height: 60%;
   }
 
-  header{
+  header {
     background-position: center;
   }
 
-  header .menu .contenedor a img:hover{
+  header .menu .contenedor a img:hover {
     transform: scale(1);
   }
 
-  header .menu .contenedor nav{
+  header .menu .contenedor nav {
     position: absolute;
     top: 60px;
     left: 0;
@@ -258,58 +282,59 @@ footer .contenedor img:hover{
     display: none;
   }
 
-  header .menu .contenedor nav .lista-menu{
+  header .menu .contenedor nav .lista-menu {
     flex-direction: column;
   }
 
-  header .menu .contenedor nav .lista-menu li{
+  header .menu .contenedor nav .lista-menu li {
     margin-bottom: 10px;
   }
 
-  header .titulo .contenedor .contenedor-titulo{
+  header .titulo .contenedor .contenedor-titulo {
     padding: 30vh 0;
   }
 
-  main #sobre-mi .contenedor .contenedor-sobremi{
+  main #sobre-mi .contenedor .contenedor-sobremi {
     flex-direction: column;
   }
 
-  main #sobre-mi .contenedor .contenedor-sobremi .imagen img{
+  main #sobre-mi .contenedor .contenedor-sobremi .imagen img {
     width: 222%;
   }
 
-  main #sobre-mi .contenedor .contenedor-sobremi .texto{
+  main #sobre-mi .contenedor .contenedor-sobremi .texto {
     width: 100%;
   }
 
-  main #mis-proyectos .contenedor .contenedor-misproyectos{
+  main #mis-proyectos .contenedor .contenedor-misproyectos {
     flex-direction: column;
   }
 
-  main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto{
+  main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto {
     width: 82%;
   }
 
-  main #contacto .contenedor form{
+  main #contacto .contenedor form {
     flex-direction: column;
     width: 100%;
   }
 
-  main #contacto .contenedor form input[type="text"],main #contacto .contenedor form input[type="email"]{
+  main #contacto .contenedor form input[type="text"],
+  main #contacto .contenedor form input[type="email"] {
     width: 100%;
   }
 
-  footer .contenedor img{
+  footer .contenedor img {
     margin: 0 10px;
   }
 }
 
-@media (min-width:600px) and (max-width:800px) {
-  header .titulo .contenedor .contenedor-titulo{
+@media (min-width: 600px) and (max-width: 800px) {
+  header .titulo .contenedor .contenedor-titulo {
     padding: 40vh 0;
   }
 
-  main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto{
+  main #mis-proyectos .contenedor .contenedor-misproyectos .proyecto {
     width: 75%;
     margin: auto;
     margin-top: 20px;
